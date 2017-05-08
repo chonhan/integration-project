@@ -64,7 +64,6 @@ public class App extends Application<Config> {
         final MemberDataDao mDao = new MemberDataDao(hibernateBundle.getSessionFactory());
         final RelationshipDao rDao = new RelationshipDao(hibernateBundle.getSessionFactory());
 
-
         LOGGER.info("Register Integration REST API");
         env.jersey().register(new MemberController(mDao));
         env.jersey().register(new RelationController(mDao, rDao));

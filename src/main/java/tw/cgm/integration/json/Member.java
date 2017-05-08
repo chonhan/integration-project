@@ -5,6 +5,7 @@ import com.google.common.base.MoreObjects;
 import tw.cgm.integration.enums.ChurchDepartment;
 import tw.cgm.integration.enums.Country;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 /**
@@ -25,9 +26,9 @@ public class Member {
 
     private ChurchDepartment department;
 
-    private Date birthday;
+    private LocalDate birthday;
 
-    private Date baptismday;
+    private LocalDate baptismday;
 
     public Member() {
     }
@@ -96,20 +97,20 @@ public class Member {
     }
 
     @JsonProperty
-    public Date getBirthday() {
+    public LocalDate getBirthday() {
         return birthday;
     }
 
-    public void setBirthday(Date birthday) {
+    public void setBirthday(LocalDate birthday) {
         this.birthday = birthday;
     }
 
     @JsonProperty
-    public Date getBaptismday() {
+    public LocalDate getBaptismday() {
         return baptismday;
     }
 
-    public void setBaptismday(Date baptismday) {
+    public void setBaptismday(LocalDate baptismday) {
         this.baptismday = baptismday;
     }
 

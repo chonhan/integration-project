@@ -14,9 +14,9 @@
             <column name="nameReal" type="varchar(255)"/>
             <column name="nameChanged" type="varchar(255)"/>
             <column name="namePassport" type="varchar(255)"/>
-            <column name="country" type="varchar(64)"/>
+            <column name="country" type="int"/>
             <column name="church" type="varchar(255)"/>
-            <column name="department" type="varchar(64)"/>
+            <column name="department" type="int"/>
             <column name="birthday" type="date"/>
             <column name="baptismday" type="date"/>
         </createTable>
