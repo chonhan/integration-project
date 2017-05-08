@@ -1,5 +1,7 @@
 # Integration Project
 
+The prototype that use REST APIs to do Member CRUD and Relationship CRUD operations.
+
 ### REST API Framework
 * Dropwizard
 
